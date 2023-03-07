@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { EmployeeModule } from './employee/employee.module';
 import { SharedService } from './shared.service';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, EmployeeModule],
+  imports: [BrowserModule, CommonModule, FormsModule, EmployeeModule],
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
   providers: [SharedService],
